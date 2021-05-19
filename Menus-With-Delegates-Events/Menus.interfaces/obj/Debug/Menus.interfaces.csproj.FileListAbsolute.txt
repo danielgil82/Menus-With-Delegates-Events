@@ -1,0 +1,6 @@
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.interfaces\bin\Debug\Menus.interfaces.dll
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.interfaces\bin\Debug\Menus.interfaces.pdb
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.interfaces\obj\Debug\Menus.interfaces.csprojAssemblyReference.cache
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.interfaces\obj\Debug\Menus.interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.interfaces\obj\Debug\Menus.interfaces.dll
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.interfaces\obj\Debug\Menus.interfaces.pdb

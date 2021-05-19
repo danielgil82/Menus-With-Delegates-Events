@@ -1,0 +1,11 @@
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\bin\Debug\Menus.Test.exe
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\bin\Debug\Menus.Test.pdb
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\bin\Debug\Menus.Delegates.dll
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\bin\Debug\Menus.interfaces.dll
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\bin\Debug\Menus.Delegates.pdb
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\bin\Debug\Menus.interfaces.pdb
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\obj\Debug\Menus.Test.csprojAssemblyReference.cache
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\obj\Debug\Menus.Test.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\obj\Debug\Menus.Test.csproj.CopyComplete
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\obj\Debug\Menus.Test.exe
+C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Test\obj\Debug\Menus.Test.pdb
