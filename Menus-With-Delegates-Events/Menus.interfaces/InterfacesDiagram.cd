@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Menus.interfaces.MainMenu">
-    <Position X="2" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MainMenu.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Menus.interfaces.MenuItem">
     <Position X="6.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
@@ -49,8 +42,15 @@
   <Class Name="Menus.interfaces.SubMenu">
     <Position X="1.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SubMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menus.interfaces.MainMenu">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Menus.interfaces.IActionItem">
