@@ -8,14 +8,13 @@ namespace Menus.interfaces
     {
         private const string k_Title = "ShowTime";
 
-        public ShowTime()
+        public ShowTime(): base(k_Title)
         {
-            Title = k_Title;
         }
 
         void IActionItem.Activate()
         {
-            Console.WriteLine("The time now is {0}", DateTime.Now.Hour);
+            Console.WriteLine("The time now is {0}:{1}", DateTime.Now.Hour, DateTime.Now.Minute);
         }
     }
 }

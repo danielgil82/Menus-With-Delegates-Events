@@ -8,9 +8,8 @@ namespace Menus.interfaces
     {
         private const string k_Title = "ShowVersion";
         
-        public ShowVersion() 
+        public ShowVersion(): base(k_Title)
         {
-            Title = k_Title;
         }
 
         void IActionItem.Activate()

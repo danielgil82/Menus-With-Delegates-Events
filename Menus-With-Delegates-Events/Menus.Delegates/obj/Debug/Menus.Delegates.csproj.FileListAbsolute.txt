@@ -4,3 +4,9 @@ C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Eve
 C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Delegates\obj\Debug\Menus.Delegates.csproj.CoreCompileInputs.cache
 C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Delegates\obj\Debug\Menus.Delegates.dll
 C:\Users\Daniel\GitProjects\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Delegates\obj\Debug\Menus.Delegates.pdb
+C:\Users\ezrat\Desktop\לימודים\c#\פרוייקטים בGIT\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Delegates\bin\Debug\Menus.Delegates.dll
+C:\Users\ezrat\Desktop\לימודים\c#\פרוייקטים בGIT\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Delegates\bin\Debug\Menus.Delegates.pdb
+C:\Users\ezrat\Desktop\לימודים\c#\פרוייקטים בGIT\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Delegates\obj\Debug\Menus.Delegates.csprojAssemblyReference.cache
+C:\Users\ezrat\Desktop\לימודים\c#\פרוייקטים בGIT\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Delegates\obj\Debug\Menus.Delegates.csproj.CoreCompileInputs.cache
+C:\Users\ezrat\Desktop\לימודים\c#\פרוייקטים בGIT\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Delegates\obj\Debug\Menus.Delegates.dll
+C:\Users\ezrat\Desktop\לימודים\c#\פרוייקטים בGIT\Menus-With-Delegates-Events\Menus-With-Delegates-Events\Menus.Delegates\obj\Debug\Menus.Delegates.pdb

@@ -7,26 +7,27 @@ namespace Menus.Test
 {
     public class Program
     {
-        private const int k_First = 1;
         public static void Main(string[] args)
         {
-          //  MainMenu mainMenu = new MainMenu("Main Menu");
-            SubMenu dateTimeMenu = new SubMenu("Show Date / Time");
-       //     SubMenu versionAndCountDigitsMenu = new SubMenu("Version and Digits");
+          // MainMenu mainMenu = new MainMenu("Main Menu");
+            SubMenu dateTimeMenu = new SubMenu("Show Date/Time"); 
+            SubMenu versionAndCountSpacesMenu = new SubMenu("Version and Spaces");
             ShowTime showTime = new ShowTime();
             ShowDate showDate = new ShowDate();
-            CountSpaces countDigits = new CountSpaces();
+            CountSpaces countSpaces = new CountSpaces();
             ShowVersion showVersion = new ShowVersion();
 
-            dateTimeMenu.AddSubMenuItem(showVersion);
-            dateTimeMenu.AddSubMenuItem(countDigits);
+            versionAndCountSpacesMenu.AddSubMenuItem(showVersion);
+            versionAndCountSpacesMenu.AddSubMenuItem(countSpaces);
             dateTimeMenu.AddSubMenuItem(showDate);
             dateTimeMenu.AddSubMenuItem(showTime);
+            SubMenu menu = new SubMenu("Main Menu");
+            MainMenu mainMenu = new MainMenu(menu);
+            mainMenu.AddSubMenu(versionAndCountSpacesMenu);
+            mainMenu.AddSubMenu(dateTimeMenu);
+            mainMenu.Show();
            
-            
-            dateTimeMenu.printCurrentSubMenu();
-          
-            Console.ReadKey();
+
         }
         
     }

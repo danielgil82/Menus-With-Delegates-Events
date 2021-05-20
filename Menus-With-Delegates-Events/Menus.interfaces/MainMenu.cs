@@ -6,12 +6,20 @@ namespace Menus.interfaces
 {
     public class MainMenu
     {
-        private readonly List<SubMenu> r_SubMenus = new List<SubMenu>();
+        private SubMenu m_MainMenu;
 
-        public void AddSubMenu()
+        public MainMenu(SubMenu i_SubMainMenu)
         {
-         
-            
+            m_MainMenu = i_SubMainMenu;
+        }
+
+        public void Show()
+        {
+            m_MainMenu.ShowSubMenu(m_MainMenu.Title);
+        }
+        public void AddSubMenu(MenuItem i_item)
+        {
+            m_MainMenu.AddSubMenuItem(i_item);
         }
 
     }

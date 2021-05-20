@@ -8,9 +8,8 @@ namespace Menus.interfaces
     {
         private const string k_Title = "CountSpaces";
 
-        public CountSpaces()
+        public CountSpaces():base(k_Title)
         {
-            Title = k_Title;
         }
 
         void IActionItem.Activate()
@@ -28,7 +27,16 @@ namespace Menus.interfaces
                 }
             }
 
-            Console.WriteLine("There is {0} spaces in your sentence", numberOfSpaces);
+            if (numberOfSpaces == 1)
+            {
+                Console.WriteLine("There is {0} space in your sentence", numberOfSpaces);
+
+            }
+            else
+            {
+                Console.WriteLine("There are {0} spaces in your sentence", numberOfSpaces);
+
+            }
         }
     }
 }
