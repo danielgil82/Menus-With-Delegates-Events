@@ -9,16 +9,16 @@ namespace Menus.interfaces
 {
     public class SubMenu : MenuItem
     {
-       // private static byte m_SubMenusCurrentLevel = 1;
         private byte m_CurrentIdx = 1;
         private const byte k_EndCurrentLevel = 0;
         private readonly Hashtable r_MenuItems;
         private string m_FirstOptionInSubMenu;
-        //private const byte k_FirstLevel = 1;
         private const string k_MainTitle = "Main Menu";
         private const string k_Exit = "Exit";
         private const string k_Back = "Back";
-        
+        // private static byte m_SubMenusCurrentLevel = 1;
+        //private const byte k_FirstLevel = 1;
+
         public SubMenu(string i_Title):base(i_Title)
         {
             //Title = i_Title;
@@ -34,7 +34,7 @@ namespace Menus.interfaces
 
         public void PrintCurrentSubMenu(string i_PreviousTitle)
         {
-           // Console.WriteLine("The current level is: {0}", m_SubMenusCurrentLevel);
+             // Console.WriteLine("The current level is: {0}", m_SubMenusCurrentLevel);
             Console.WriteLine(i_PreviousTitle);
             Console.WriteLine("=============================");
             for (byte i = 1; i < r_MenuItems.Count; i++)
@@ -42,11 +42,11 @@ namespace Menus.interfaces
                 Console.WriteLine("{0}) {1}", i, (r_MenuItems[i] as MenuItem).Title);
                 
             }
-            Console.WriteLine("{0}) {1}", k_EndCurrentLevel, m_FirstOptionInSubMenu);//שורה 0 תמיד חזור או יציאה
 
+            Console.WriteLine("{0}) {1}", k_EndCurrentLevel, m_FirstOptionInSubMenu);//שורה 0 תמיד חזור או יציאה
         }
 
-        //פונק שמראה את כל התתי תפריטים
+        // A recursive fun that show's the menus
         public void ShowSubMenu(string i_PreviousTitle)
         {
             bool continueToShow = true;
@@ -76,7 +76,7 @@ namespace Menus.interfaces
                     else if (userChoiceByte == k_EndCurrentLevel)
                     {
                         continueToShow = false;
-                       // m_SubMenusCurrentLevel--; //הקטנה של מספר השלב כאשר הלולאה נשברת
+                       // m_SubMenusCurrentLevel--; //הקטנה של מספר השלב כאשר הלולאה נשברת 
                        if (m_FirstOptionInSubMenu == k_Exit)
                        {
                             Console.WriteLine("Exited main menu, goodbye...");
@@ -107,7 +107,7 @@ namespace Menus.interfaces
             Console.Clear();
         }
 
-        //קבלת קלט מהמשתמש
+        // Get user's input
         public string GetUserChoice()
         {
             string userChoice = string.Empty;
@@ -118,7 +118,7 @@ namespace Menus.interfaces
             return userChoice;
         }
 
-        //וולידציה על הקלט של המשתמש
+        // Validation on users choice
         public void ValidateUserChoice(string i_UserChoice)
         {
             byte numberForParse;

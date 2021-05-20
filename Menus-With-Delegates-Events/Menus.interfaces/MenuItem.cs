@@ -11,7 +11,6 @@ namespace Menus.interfaces
         public string Title
         {
             get { return r_Title; }
-
         }
 
         public MenuItem(string i_Title)

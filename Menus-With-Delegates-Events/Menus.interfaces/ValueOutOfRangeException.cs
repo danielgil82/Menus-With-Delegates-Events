@@ -9,11 +9,11 @@ namespace Menus.interfaces
         private readonly float r_MaxValue;
         private readonly float r_MinValue;
 
-        public ValueOutOfRangeException(float i_RMaxValue, float i_RMinValue)
-            : base(string.Format("Oops , out of range {0} - {1} ", i_RMinValue, i_RMaxValue))
+        public ValueOutOfRangeException(float i_rMaxValue, float i_rMinValue)
+            : base(string.Format("Oops , out of range {0} - {1} ", i_rMinValue, i_rMaxValue))
         {
-            r_MaxValue = i_RMaxValue;
-            r_MinValue = i_RMinValue;
+            r_MaxValue = i_rMaxValue;
+            r_MinValue = i_rMinValue;
         }
     }
 }
