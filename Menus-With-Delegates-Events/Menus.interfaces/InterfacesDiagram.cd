@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Menus.interfaces.MenuItem">
-    <Position X="6.5" Y="3.5" Width="1.5" />
+    <Position X="6.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MenuItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Menus.interfaces.ShowVersion">
-    <Position X="2" Y="7.25" Width="1.5" />
+    <Position X="2.75" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ShowVersion.cs</FileName>
@@ -40,17 +40,24 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Menus.interfaces.SubMenu">
-    <Position X="1.5" Y="4.5" Width="1.5" />
+    <Position X="0.5" Y="3.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ABIgEAAAAAAgAAAAAAAAAABAAAAAAiEAAApAAAAgAAA=</HashCode>
       <FileName>SubMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Menus.interfaces.MainMenu">
     <Position X="3.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menus.interfaces.ValueOutOfRangeException">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValueOutOfRangeException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Menus.interfaces.IActionItem">

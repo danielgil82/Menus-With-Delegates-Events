@@ -38,6 +38,7 @@
     <None Include="InterfacesDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ValueOutOfRangeException.cs" />
     <Compile Include="CountSpaces.cs" />
     <Compile Include="IActionItem.cs" />
     <Compile Include="MainMenu.cs" />

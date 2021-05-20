@@ -6,13 +6,17 @@ namespace Menus.interfaces
 {
     public abstract class MenuItem
     {
-        private string m_Title;
+        private readonly string r_Title;
 
         public string Title
         {
-            get { return m_Title; }
+            get { return r_Title; }
 
-            set { m_Title = value; }
+        }
+
+        public MenuItem(string i_Title)
+        {
+            r_Title = i_Title;
         }
     }
 }
