@@ -17,9 +17,10 @@ namespace Menus.interfaces
         {
             m_MainMenu.ShowSubMenu(m_MainMenu.Title);
         }
-        public void AddSubMenu(MenuItem i_item)
+
+        public void AddSubMenu(MenuItem i_Item)
         {
-            m_MainMenu.AddSubMenuItem(i_item);
+            m_MainMenu.AddSubMenuItem(i_Item);
         }
 
     }
