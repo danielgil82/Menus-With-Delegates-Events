@@ -1,17 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Menus.Delegates.MainMenu">
-    <Position X="2.5" Y="1.5" Width="1.5" />
+    <Position X="3.25" Y="1.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>gAAAAACAAAAAAAAAAAAAEEAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MainMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Menus.Delegates.MenuItem">
-    <Position X="3.5" Y="3.75" Width="1.5" />
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAhAAAAAAAAA=</HashCode>
       <FileName>MenuItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menus.Delegates.ButtonShowTime">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>ButtonShowTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menus.Delegates.ButtonShowDate">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="Menus.Delegates.MenuItem" ManuallyRouted="true">
+      <Path>
+        <Point X="7" Y="2.949" />
+        <Point X="7" Y="5.089" />
+        <Point X="3" Y="5.089" />
+        <Point X="3" Y="5.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>ButtonShowDate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menus.Delegates.ButtonShowVersion">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>ButtonShowVersion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menus.Delegates.ButtonCountSpaces">
+    <Position X="9.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>ButtonCountSpaces.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menus.Delegates.ValueOutOfRangeException">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValueOutOfRangeException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menus.Delegates.SubMenu">
+    <Position X="12.75" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABIgEAAAAAAgABAAAAAAABBAAAAAACUAABoAAAAgAAA=</HashCode>
+      <FileName>SubMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menus.Delegates.ActionItem">
+    <Position X="1.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAAAAI=</HashCode>
+      <FileName>ActionItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

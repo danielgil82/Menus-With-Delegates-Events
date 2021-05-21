@@ -38,8 +38,15 @@
     <None Include="MenusDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionItem.cs" />
+    <Compile Include="ButtonCountSpaces.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="MenuItem.cs" />
+    <Compile Include="ButtonShowDate.cs" />
+    <Compile Include="ButtonShowTime.cs" />
+    <Compile Include="ButtonShowVersion.cs" />
+    <Compile Include="SubMenu.cs" />
+    <Compile Include="ValueOutOfRangeException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
