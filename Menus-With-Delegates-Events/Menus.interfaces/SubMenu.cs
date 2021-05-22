@@ -19,7 +19,7 @@ namespace Menus.interfaces
         // private static byte m_SubMenusCurrentLevel = 1;
         //private const byte k_FirstLevel = 1;
 
-        public SubMenu(string i_Title):base(i_Title)
+        public SubMenu(string i_Title) : base(i_Title)
         {
             //Title = i_Title;
             r_MenuItems = new Hashtable();

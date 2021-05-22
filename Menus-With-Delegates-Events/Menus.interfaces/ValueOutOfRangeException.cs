@@ -6,14 +6,14 @@ namespace Menus.interfaces
 {
     public class ValueOutOfRangeException : Exception
     {
-        private readonly float r_MaxValue;
-        private readonly float r_MinValue;
+        private readonly float i_maxValue;
+        private readonly float i_minValue;
 
-        public ValueOutOfRangeException(float i_rMaxValue, float i_rMinValue)
-            : base(string.Format("Oops , out of range {0} - {1} ", i_rMinValue, i_rMaxValue))
+        public ValueOutOfRangeException(float i_MaxValue, float i_MinValue)
+            : base(string.Format("Oops , out of range {0} - {1} ", i_MinValue, i_MaxValue))
         {
-            r_MaxValue = i_rMaxValue;
-            r_MinValue = i_rMinValue;
+            i_maxValue = i_MaxValue;
+            i_minValue = i_MinValue;
         }
     }
 }
