@@ -29,8 +29,9 @@ namespace Menus.interfaces
             m_CurrentIdx++;
         }
 
-        private void printCurrentSubMenu(string i_PreviousTitle)
+        private void printCurrentSubMenu(string i_PreviousTitle, byte i_CurrentLevelNumber)
         {
+            Console.WriteLine("Current level is: {0}", i_CurrentLevelNumber);          
             Console.WriteLine(i_PreviousTitle);
             Console.WriteLine("=============================");
             for (byte i = 1; i < r_MenuItems.Count; i++)
@@ -41,7 +42,7 @@ namespace Menus.interfaces
             Console.WriteLine("{0}) {1}", k_EndCurrentLevel, m_FirstOptionInSubMenu);
         }
 
-        internal void ShowSubMenu(string i_PreviousTitle)
+        internal void ShowSubMenu(string i_PreviousTitle, byte i_CurrentLevelNumber)
         {
             bool continueToShow = true;
 
@@ -51,7 +52,8 @@ namespace Menus.interfaces
                 byte userChoiceByte;
 
                 decideAndUpdateIfExitOrBackAsFirstOption();
-                printCurrentSubMenu(i_PreviousTitle);
+                printCurrentSubMenu(i_PreviousTitle, (byte)(i_CurrentLevelNumber + 1));
+                
                 try
                 {
                     userChoice = getUserChoice();
@@ -60,7 +62,8 @@ namespace Menus.interfaces
                     Console.Clear();
                     if (r_MenuItems[userChoiceByte] is SubMenu)
                     {
-                        (r_MenuItems[userChoiceByte] as SubMenu).ShowSubMenu((r_MenuItems[userChoiceByte] as MenuItem).Title);
+                        (r_MenuItems[userChoiceByte] as SubMenu).ShowSubMenu((r_MenuItems[userChoiceByte] as MenuItem).Title, 
+                            (byte)(i_CurrentLevelNumber + 1));
                     }
                     else if (r_MenuItems[userChoiceByte] is IActionItem)
                     {

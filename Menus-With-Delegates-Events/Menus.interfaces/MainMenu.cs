@@ -7,6 +7,7 @@ namespace Menus.interfaces
     public class MainMenu
     {
         private const string k_MainTitle = "Main Menu";
+        private const byte k_FirstLevel = 0;
         private SubMenu m_MainMenu;
 
         public MainMenu()
@@ -16,7 +17,7 @@ namespace Menus.interfaces
 
         public void Show()
         {
-            m_MainMenu.ShowSubMenu(m_MainMenu.Title);
+            m_MainMenu.ShowSubMenu(m_MainMenu.Title, k_FirstLevel);
         }
 
         public void AddSubMenu(MenuItem i_Item)
