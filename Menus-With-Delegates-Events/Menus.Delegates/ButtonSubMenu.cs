@@ -6,21 +6,20 @@ using System.Threading;
 
 namespace Menus.Delegates
 {
-    public class SubMenu : MenuItem
+    public class ButtonSubMenu : MenuItem
     {
-        private byte m_CurrentIdx = 1;
-        private const byte k_EndCurrentLevel = 0;
-        private readonly Hashtable r_MenuItems;
-        private string m_FirstOptionInSubMenu;
         private const string k_MainTitle = "Main Menu";
         private const string k_Exit = "Exit";
         private const string k_Back = "Back";
-        private string m_PreviousTitle;
+        private const byte k_EndCurrentLevel = 0;
+        private readonly Hashtable r_MenuItems;
+        private byte m_CurrentIdx = 1;
+        private string m_FirstOptionInSubMenu;
 
-        public SubMenu(string i_Title) : base(i_Title)
+        public ButtonSubMenu(string i_Title) : base(i_Title)
         {
             r_MenuItems = new Hashtable();
-            r_MenuItems.Add(k_EndCurrentLevel, null);//הוספה של 0 בהתחלה 
+            r_MenuItems.Add(k_EndCurrentLevel, null);
         }
 
         public void AddSubMenuItem(MenuItem i_MenuItem)
@@ -29,9 +28,9 @@ namespace Menus.Delegates
             m_CurrentIdx++;
         }
 
-        public void PrintCurrentSubMenu()
+        private void printCurrentSubMenu(string i_PreviousTitle)
         {
-            Console.WriteLine(m_PreviousTitle);
+            Console.WriteLine(i_PreviousTitle);
             Console.WriteLine("=============================");
             for (byte i = 1; i < r_MenuItems.Count; i++)
             {
@@ -41,60 +40,67 @@ namespace Menus.Delegates
             Console.WriteLine("{0}) {1}", k_EndCurrentLevel, m_FirstOptionInSubMenu);
         }
 
-        public override void SelectedItem()
+        internal override void DoWhenSelected(object i_SubMenu)
         {
-            ShowSubMenu();
+            this.SelectedMenuItem += buttonSubMenu_SelectedMenuItem;
+            OnSelected(this);
+            this.SelectedMenuItem -= buttonSubMenu_SelectedMenuItem;
         }
 
-        // A recursive fun that show's the menus
-        public void ShowSubMenu()
+        internal void ShowSubMenu(object i_sender)
+        {
+            buttonSubMenu_SelectedMenuItem(i_sender);
+        }
+
+        /// A recursive function that show's the menus
+        private void buttonSubMenu_SelectedMenuItem(object i_sender)
         {
             bool continueToShow = true;
+            string PreviousTitle = (i_sender as MenuItem).Title;
 
             while (continueToShow)
             {
                 string userChoice = string.Empty;
                 byte userChoiceByte;
 
-                DecideAndUpdateIfExitOrBackAsFirstOption();
-                PrintCurrentSubMenu();
+                decideAndUpdateIfExitOrBackAsFirstOption();
+                printCurrentSubMenu(PreviousTitle);
                 try
                 {
-                    userChoice = GetUserChoice();
-                    ValidateUserChoice(userChoice);
+                    userChoice = getUserChoice();
+                    validateUserChoice(userChoice);
                     userChoiceByte = byte.Parse(userChoice);
                     Console.Clear();
                     if (r_MenuItems[userChoiceByte] is MenuItem)
                     {
-                        (r_MenuItems[userChoiceByte] as MenuItem).SelectedItem();
+                        (r_MenuItems[userChoiceByte] as MenuItem).DoWhenSelected(r_MenuItems[userChoiceByte]);
+
+                        if (!(r_MenuItems[userChoiceByte] is ButtonSubMenu))
+                        {
+                            printsInTheEndOfAction();
+                        }
                     }
                     else if (userChoiceByte == k_EndCurrentLevel)
                     {
                         continueToShow = false;
-
-                        if (m_FirstOptionInSubMenu == k_Exit)
-                        {
-                            Console.WriteLine("Exited main menu, goodbye...");
-                            Thread.Sleep(1000);
-                        }
                     }
                 }
                 catch (FormatException ex)
                 {
                     Console.WriteLine();
                     Console.WriteLine(ex.Message);
-                    PrintsInTheEndOfAction();
+                    printsInTheEndOfAction();
                 }
                 catch (ValueOutOfRangeException ex)
                 {
                     Console.WriteLine();
                     Console.WriteLine(ex.Message);
-                    PrintsInTheEndOfAction();
+                    printsInTheEndOfAction();
                 }
             }
         }
 
-        public void PrintsInTheEndOfAction()
+        private void printsInTheEndOfAction()
         {
             Console.WriteLine();
             Console.WriteLine("Press any key to continue...");
@@ -103,18 +109,18 @@ namespace Menus.Delegates
         }
 
         // Get user's input
-        public string GetUserChoice()
+        private string getUserChoice()
         {
             string userChoice = string.Empty;
 
-            Console.Write("Please enter your choice 1-{0} or 0 for {1}:", r_MenuItems.Count - 1, m_FirstOptionInSubMenu);
+            Console.Write("Please enter your choice 1-{0} or 0 for {1}: ", r_MenuItems.Count - 1, m_FirstOptionInSubMenu);
             userChoice = Console.ReadLine();
 
             return userChoice;
         }
 
         // Validation on users choice
-        public void ValidateUserChoice(string i_UserChoice)
+        private void validateUserChoice(string i_UserChoice)
         {
             byte numberForParse;
             if (!byte.TryParse(i_UserChoice, out numberForParse))
@@ -128,24 +134,9 @@ namespace Menus.Delegates
             }
         }
 
-        public void DecideAndUpdateIfExitOrBackAsFirstOption()
+        private void decideAndUpdateIfExitOrBackAsFirstOption()
         {
-            if (Title == k_MainTitle)
-            {
-                m_FirstOptionInSubMenu = k_Exit;
-            }
-            else
-            {
-                m_FirstOptionInSubMenu = k_Back;
-            }
-        }
-
-        public Hashtable MenuItems
-        {
-            get
-            {
-                return r_MenuItems;
-            }
+            m_FirstOptionInSubMenu = Title == k_MainTitle ? k_Exit : k_Back;
         }
     }
 }

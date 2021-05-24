@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Menus.interfaces
 {
-    public interface IActionItem
+    internal interface IActionItem
     {
         void Activate();
     }

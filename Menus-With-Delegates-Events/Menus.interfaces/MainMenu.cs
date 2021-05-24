@@ -6,11 +6,12 @@ namespace Menus.interfaces
 {
     public class MainMenu
     {
+        private const string k_MainTitle = "Main Menu";
         private SubMenu m_MainMenu;
 
-        public MainMenu(SubMenu i_SubMainMenu)
+        public MainMenu()
         {
-            m_MainMenu = i_SubMainMenu;
+            m_MainMenu = new SubMenu(k_MainTitle);
         }
 
         public void Show()
@@ -18,10 +19,9 @@ namespace Menus.interfaces
             m_MainMenu.ShowSubMenu(m_MainMenu.Title);
         }
 
-        public void AddSubMenuToTheMainMenu(MenuItem i_SubMenuItem)
+        public void AddSubMenu(MenuItem i_Item)
         {
-            m_MainMenu.AddSubMenuItem(i_SubMenuItem);
+            m_MainMenu.AddSubMenuItem(i_Item);
         }
-
     }
 }

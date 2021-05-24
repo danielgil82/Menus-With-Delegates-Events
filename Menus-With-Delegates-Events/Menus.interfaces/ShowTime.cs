@@ -8,7 +8,7 @@ namespace Menus.interfaces
     {
         private const string k_Title = "ShowTime";
 
-        public ShowTime(): base(k_Title)
+        public ShowTime() : base(k_Title)
         {
         }
 

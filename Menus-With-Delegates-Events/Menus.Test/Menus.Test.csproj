@@ -36,9 +36,9 @@
       <Project>{5197e74b-98ca-4cc1-ae21-44a8fddd2b2f}</Project>
       <Name>Menus.Delegates</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Menus.interfaces\Menus.interfaces.csproj">
+    <ProjectReference Include="..\Menus.interfaces\Menus.Interfaces.csproj">
       <Project>{f81b8314-eaf1-42e8-9fba-650577ae6d5a}</Project>
-      <Name>Menus.interfaces</Name>
+      <Name>Menus.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

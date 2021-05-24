@@ -6,34 +6,22 @@ namespace Menus.Delegates
 {
     public class MainMenu
     {
-        public ButtonShowDate showDate;
-        public ButtonCountSpaces countSpaces;
-        private SubMenu m_subMenu;
+        private const string k_MainTitle = "Main Menu";
+        private ButtonSubMenu m_ButtonSubMenu;
 
-        public MainMenu(SubMenu i_SubMainMenu)
+        public MainMenu()
         {
-            m_subMenu = i_SubMainMenu;
-
-            //showDate = new ButtonShowDate();
-            //showDate.Selected += new MenuItem.SelectedEventHandler(showDate.ActivateFunction);
-            //countSpaces = new ButtonCountSpaces();
-            //countSpaces.Selected += new MenuItem.SelectedEventHandler(countSpaces.ActivateFunction);
-
-            foreach (MenuItem menuItem in m_subMenu.MenuItems as MenuItem)
-            {
-                m_subMenu.Selected += new MenuItem.SelectedEventHandler(menuItem.ActivateFunction);
-            }
+            m_ButtonSubMenu = new ButtonSubMenu(k_MainTitle);
         }
 
         public void AddSubMenu(MenuItem i_Item)
         {
-            m_subMenu.AddSubMenuItem(i_Item);
+            m_ButtonSubMenu.AddSubMenuItem(i_Item);
         }
 
         public void Show()
         {
-            m_subMenu.ActivateFunction();
+            m_ButtonSubMenu.ShowSubMenu(m_ButtonSubMenu);
         }
-
     }
 }

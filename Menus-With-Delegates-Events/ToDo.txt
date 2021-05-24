@@ -1,7 +1,0 @@
-# Think if to change the access modifier in the activate() --> method in the Show(time,version,date) & CountSpaces
-
-# Relate to the numbers in the submenu index's
-
-#k_BackOrExit 
-
-m_SubMenusCurrentLevel למחוק אם גיא לא רוצה מספרים ברמות

@@ -5,24 +5,32 @@ using System.Text;
 
 namespace Menus.Delegates
 {
+    public delegate void SelectedEventHandler(object sender);
+
     public abstract class MenuItem
     {
-        
-        
         private readonly string r_Title;
 
-        public abstract void SelectedItem();
+        public event SelectedEventHandler SelectedMenuItem;
 
-        public MenuItem(string i_Title)
+        protected MenuItem(string i_Title)
         {
             r_Title = i_Title;
         }
 
-        public string Title
+        internal abstract void DoWhenSelected(object i_Object);
+
+        protected virtual void OnSelected(object sender)
+        {
+            if (SelectedMenuItem != null)
+            {
+                SelectedMenuItem.Invoke(sender);
+            }
+        }
+
+        internal string Title
         {
             get { return r_Title; }
         }
-
-      
     }
 }

@@ -8,7 +8,7 @@ namespace Menus.interfaces
     {
         private const string k_Title = "ShowVersion";
         
-        public ShowVersion(): base(k_Title)
+        public ShowVersion() : base(k_Title)
         {
         }
 

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Menus.Delegates.MenuItem">
-    <Position X="6.25" Y="0.75" Width="1.5" />
+    <Position X="7" Y="0.75" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -11,21 +11,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Menus.Delegates.ValueOutOfRangeException">
-    <Position X="9.5" Y="1.5" Width="1.5" />
+    <Position X="9.75" Y="0.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
       <FileName>ValueOutOfRangeException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Menus.Delegates.SubMenu">
-    <Position X="12.75" Y="4" Width="2.5" />
+    <Position X="11.5" Y="4" Width="3.25" />
     <TypeIdentifier>
       <HashCode>ABIgEAAAAAAgABAAAAAAABBAAAAAACUAABoAAAAgAAA=</HashCode>
       <FileName>SubMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Menus.Delegates.ActionItem">
-    <Position X="1.75" Y="4.25" Width="1.5" />
+    <Position X="3.25" Y="4" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAAAAI=</HashCode>
       <FileName>ActionItem.cs</FileName>

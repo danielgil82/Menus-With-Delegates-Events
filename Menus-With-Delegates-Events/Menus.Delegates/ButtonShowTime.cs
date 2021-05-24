@@ -1,21 +1,27 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-//namespace Menus.Delegates
-//{
-//    public class ButtonShowTime : ActionItem
-//    {
-//        private const string k_Title = "ShowTime";
+namespace Menus.Delegates
+{
+    public class ButtonShowTime : MenuItem
+    {
+        private const string k_Title = "ShowTime";
 
-//        public ButtonShowTime() : base(k_Title)
-//        {
+        public ButtonShowTime() : base(k_Title)
+        {
+        }
 
-//        }
+        internal override void DoWhenSelected(object i_Object)
+        {
+            this.SelectedMenuItem += buttonShowTime_SelectedMenuItem;
+            OnSelected(this);
+            this.SelectedMenuItem -= buttonShowTime_SelectedMenuItem;
+        }
 
-//        public override void ActivateFunction()
-//        {
-//            Console.WriteLine("The time now is {0}:{1}", DateTime.Now.Hour, DateTime.Now.Minute);
-//        }
-//    }
-//}
+        private void buttonShowTime_SelectedMenuItem(object i_Objec)
+        {
+            Console.WriteLine("The time now is {0}:{1}", DateTime.Now.Hour, DateTime.Now.Minute);
+        }
+    }
+}
