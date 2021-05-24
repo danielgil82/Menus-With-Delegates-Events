@@ -10,7 +10,6 @@ namespace Menus.Delegates
         public ButtonCountSpaces countSpaces;
         private SubMenu m_subMenu;
 
-
         public MainMenu(SubMenu i_SubMainMenu)
         {
             m_subMenu = i_SubMainMenu;
@@ -26,10 +25,6 @@ namespace Menus.Delegates
             }
         }
 
-
-
-
-        
         public void AddSubMenu(MenuItem i_Item)
         {
             m_subMenu.AddSubMenuItem(i_Item);
@@ -39,6 +34,6 @@ namespace Menus.Delegates
         {
             m_subMenu.ActivateFunction();
         }
-        
+
     }
 }
