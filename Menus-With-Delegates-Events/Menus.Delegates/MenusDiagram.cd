@@ -6,29 +6,15 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAhAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAEAAgAAAAAAAAAgAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>MenuItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Menus.Delegates.ValueOutOfRangeException">
     <Position X="9.75" Y="0.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
       <FileName>ValueOutOfRangeException.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Menus.Delegates.SubMenu">
-    <Position X="11.5" Y="4" Width="3.25" />
-    <TypeIdentifier>
-      <HashCode>ABIgEAAAAAAgABAAAAAAABBAAAAAACUAABoAAAAgAAA=</HashCode>
-      <FileName>SubMenu.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Menus.Delegates.ActionItem">
-    <Position X="3.25" Y="4" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAAAAI=</HashCode>
-      <FileName>ActionItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
